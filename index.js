@@ -42,7 +42,7 @@ const { removeBackgroundFromImageFile } = require('remove.bg')
 const { ind } = require('./language')
 const vcard = 'BEGIN:VCARD\n' //GANTI NO DAN NAMA DIBAWAH INI JADI PUNYA LU
             + 'VERSION:3.0\n' //JANGAN HILANGKAN CREDIT
-            + 'FN:Fadhil Graphy\n' //PENGEMBANG BY :
+            + 'FN:ABHI SER\n' //PENGEMBANG BY :
             + 'ORG: Pengembang Fadhil Bot;\n' //MYBOT TEAM
             + 'TEL;type=CELL;type=VOICE;waid=919074329903:+91 9074329903\n' 
             + 'END:VCARD' //SCRIPT ORI FROM MAHANKBARBAR
@@ -285,7 +285,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Hallo @${num.split('@')[0]}\     welcome to the club    *${mdata.subject}*      youll feel like family here`
+				teks = `Hallo @${num.split('@')[0]}\  ┣➢   welcome to the club    *${mdata.subject}*    ┣➢   youll feel like family here`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -295,7 +295,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks =   `finally the group burden is reduced 𝟭  ,bye bye🥳   @${num.split('@')[0]}     angane oru shalyam ozivayi²`
+				teks =   `finally the group burden is reduced     ,bye bye🥳   @${num.split('@')[0]}       angane oru shalyam ozivayi²`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			}
@@ -906,7 +906,7 @@ client.on('group-participants-update', async (anu) => {
 				case 'info':
 					me = client.user
 					uptime = process.uptime()
-					teks = `*Nama bot* : ${me.name}\n*OWNER* : *AMPIBI*\n*AUTHOR* : AMPIBI\n*Nomor Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
+					teks = `*Name bot* : ${me.name}\n*OWNER* : *ABHI*\n*AUTHOR* : TLC ABHI\n*Number Bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total Block Contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}`
 					buffer = await getBuffer(me.imgUrl)
 					client.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
