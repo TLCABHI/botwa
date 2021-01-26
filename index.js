@@ -1364,7 +1364,7 @@ client.on('group-participants-update', async (anu) => {
 						mentions(teks, mentioned, true)
 						client.groupRemove(from, mentioned)
 					} else {
-					 mentions('ok bei mamanod onnum thonnalle @${mentioned[0].split('@')[0]} true)
+				
 						client.groupRemove(from, mentioned)
 					}
 					break
