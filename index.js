@@ -1154,7 +1154,7 @@ client.on('group-participants-update', async (anu) => {
 					ranm = getRandom('.mp3')
 					rano = getRandom('.ogg')
 					dtt.length > 300
-					? reply('The text stands for Bambang😤')
+					? reply('The text is too long😤')
 					: gtts.save(ranm, dtt, function() {
 						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
 							fs.unlinkSync(ranm)
@@ -1283,7 +1283,7 @@ client.on('group-participants-update', async (anu) => {
 					if (!isGroupAdmins) return reply(ind.admin())
 					if (!isBotGroupAdmins) return reply(ind.badmin())
 					if (args[0] === 'buka') {
-					    reply(`*BERHASIL MEMBUKA GROUP*`)
+					    reply(`*SUCCESSFUL OPENING THE GROUP*`)
 						client.groupSettingChange(from, GroupSettingChange.messageSend, false)
 					} else if (args[0] === 'tutup') {
 						reply(`*open group success`)
@@ -1293,7 +1293,7 @@ client.on('group-participants-update', async (anu) => {
             case 'admin':
             case 'owner':
             case 'creator':
-                  client.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: mek})
+                  client.sendMessage(from, {displayname: "Abhi", vcard: vcard}, MessageType.contact, { quoted: mek})
                   client.sendMessage(from, 'This is may babe >_<, dont spam him he will kill u',MessageType.text, { quoted: mek} )
 					break    
            case 'setname':
@@ -1459,11 +1459,11 @@ client.on('group-participants-update', async (anu) => {
 						if (isWelkom) return reply('*SUDAH AKTIF* !!!')
 						welkom.push(from)
 						fs.writeFileSync('./database/bot/welkom.json', JSON.stringify(welkom))
-						reply('❬ 𝗦𝗨𝗞𝗦𝗘𝗦 ❭ 𝗠𝗲𝗻𝗴𝗮𝗸𝘁𝗶𝗳𝗸𝗮𝗻 𝗳𝗶𝘁𝘂𝗿 𝘄𝗲𝗹𝗰𝗼𝗺𝗲/𝗹𝗲𝗳𝘁 𝗱𝗶 𝗴𝗿𝗼𝘂𝗽 𝗶𝗻𝗶️')
+						reply('❬ SUCCESS ❭  TURN OFF FEATURES 𝘄𝗲𝗹𝗰𝗼𝗺𝗲/𝗹𝗲𝗳𝘁 OF 𝗴𝗿𝗼𝘂𝗽')
 					} else if (Number(args[0]) === 0) {
 						welkom.splice(from, 1)
 						fs.writeFileSync('./database/bot/welkom.json', JSON.stringify(welkom))
-						reply('❬ 𝗦𝗨𝗞𝗦𝗘𝗦 ❭ 𝗠𝗲𝗻𝗼𝗻𝗮𝗸𝘁𝗶𝗳𝗸𝗮𝗻 𝗳𝗶𝘁𝘂𝗿 𝘄𝗲𝗹𝗰𝗼𝗺𝗲/𝗹𝗲𝗳𝘁 𝗱𝗶 𝗴𝗿𝗼𝘂𝗽 𝗶𝗻𝗶️')
+						reply('❬ SUCCESS ❭ TURN ON FEATURES 𝘄𝗲𝗹𝗰𝗼𝗺𝗲/𝗹𝗲𝗳𝘁 OF 𝗴𝗿𝗼𝘂𝗽')
 					} else {
 						reply(ind.satukos())
 					}
@@ -1473,7 +1473,7 @@ client.on('group-participants-update', async (anu) => {
 					if (!isOwner) return reply(ind.ownerb())
 					if (args.length < 1) return reply('Boo :𝘃')
 					if (Number(args[0]) === 1) {
-						if (isWelkom) return reply('*SUDAH AKTIF* !!!')
+						if (isWelkom) return reply('*ALREADY active* !!!')
 						welkom.push(from)
 						fs.writeFileSync('./database/bot/event.json', JSON.stringify(event))
 						reply('*❬ 𝗦𝗨𝗞𝗦𝗘𝗦 ❭ 𝗠𝗲𝗻𝗴𝗮𝗸𝘁𝗶𝗳𝗸𝗮𝗻 EVENT 𝗱𝗶 𝗴𝗿𝗼𝘂𝗽 𝗶𝗻𝗶️*')
