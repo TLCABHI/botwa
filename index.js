@@ -961,14 +961,14 @@ client.on('group-participants-update', async (anu) => {
 					client.sendMessage(from, truteh, image, { caption: '*Truth*\n\n'+ ttrth, quoted: mek })
 					await limitAdd(sender)
 					break
-				case 'dare':
-				if (!isRegistered) return reply(ind.noregis())
-				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				const dare =['Send a message to your ex and say "I still like you ',' call crush / girlfriend now and ss to the player ',' pap to one of the group members ',' Says "YOU ARE BEAUTIFUL WAS NOT FRIENDLY" to guys ',' ss recent call whatsapp ',' drop Emot "🦄💨"    const der = dare[Math.floor(Math.random() * dare.length)]
-					tod = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
-					client.sendMessage(from, tod, image, { quoted: mek, caption: '*Dare*\n\n'+ der })
-					await limitAdd(sender)
-					break				
+				
+				
+				
+			
+					
+					
+					
+								
 				case 'ssweb':
                 if (!isRegistered) return reply(ind.noregis())
                 if (isLimit(sender)) return reply(ind.limitend(pusname))
