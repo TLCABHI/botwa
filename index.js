@@ -46,7 +46,7 @@ const vcard = 'BEGIN:VCARD\n' //GANTI NO DAN NAMA DIBAWAH INI JADI PUNYA LU
             + 'ORG: Pengembang Fadhil Bot;\n' //MYBOT TEAM
             + 'TEL;type=CELL;type=VOICE;waid=919074329903:+91 9074329903\n' 
             + 'END:VCARD' //SCRIPT ORI FROM MAHANKBARBAR
-prefix = '#'
+prefix = '.'
 blocked = []   
 limitawal = '2000000'
 cr = '*PUPY ABHI*'
@@ -285,7 +285,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Hallo @${num.split('@')[0]}\Selamat datang di group *${mdata.subject}* yang betah ya di sini`
+				teks = `Hallo @${num.split('@')[0]}\welcome to the club *${mdata.subject}* youll feel like family here`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 			} else if (anu.action == 'remove') {
@@ -827,13 +827,13 @@ client.on('group-participants-update', async (anu) => {
                       const one = 999999999
                       addLevelingXp(sender, one)
                       addLevelingLevel(sender, 99)
-                      reply(`karena anda owner kami dari team bot mengirim ${one}Xp untuk anda`)
+                      reply(`because you are our owner from the bot team sending ${one}Xp got you`)
                       }else{
                       const mining = Math.ceil(Math.random() * 10000)
                       addLevelingXp(sender, mining)
-                      await reply(`*selamat* ${pushname} kamu mendapatkan *${mining}Xp*`)
+                      await reply(`*congrats* ${pushname} you get *${mining}Xp*`)
                       }
-                    await limitAdd(sender)
+                    await limitAdd(sender)mendapatkan
 					break
 				case 'bisakah':
 				if (!isRegistered) return reply(ind.noregis())
@@ -964,8 +964,7 @@ client.on('group-participants-update', async (anu) => {
 				case 'dare':
 				if (!isRegistered) return reply(ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
-				const dare =['Kirim pesan ke mantan kamu dan bilang "aku masih suka sama kamu','telfon crush/pacar sekarang dan ss ke pemain','pap ke salah satu anggota grup','Bilang "KAMU CANTIK BANGET NGGAK BOHONG" ke cowo','ss recent call whatsapp','drop emot "🦄💨" setiap ngetik di gc/pc selama 1 hari','kirim voice note bilang can i call u baby?','drop kutipan lagu/quote, terus tag member yang cocok buat kutipan itu','pake foto sule sampe 3 hari','ketik pake bahasa daerah 24 jam','ganti nama menjadi "gue anak lucinta luna" selama 5 jam','chat ke kontak wa urutan sesuai %batre kamu, terus bilang ke dia "i lucky to hv you','prank chat mantan dan bilang " i love u, pgn balikan','record voice baca surah al-kautsar','bilang "i hv crush on you, mau jadi pacarku gak?" ke lawan jenis yang terakhir bgt kamu chat (serah di wa/tele), tunggu dia bales, kalo udah ss drop ke sini','sebutkan tipe pacar mu!','snap/post foto pacar/crush','teriak gajelas lalu kirim pake vn kesini','pap mukamu lalu kirim ke salah satu temanmu','kirim fotomu dengan caption, aku anak pungut','teriak pake kata kasar sambil vn trus kirim kesini','teriak " anjimm gabutt anjimmm " di depan rumah mu','ganti nama jadi " BOWO " selama 24 jam','Pura pura kerasukan, contoh : kerasukan maung, kerasukan belalang, kerasukan kulkas, dll']
-					const der = dare[Math.floor(Math.random() * dare.length)]
+				const dare =['Send a message to your ex and say "I still like you ',' call crush / girlfriend now and ss to the player ',' pap to one of the group members ',' Says "YOU ARE BEAUTIFUL WAS NOT FRIENDLY" to guys ',' ss recent call whatsapp ',' drop Emot "🦄💨"    const der = dare[Math.floor(Math.random() * dare.length)]
 					tod = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
 					client.sendMessage(from, tod, image, { quoted: mek, caption: '*Dare*\n\n'+ der })
 					await limitAdd(sender)
@@ -1268,8 +1267,8 @@ client.on('group-participants-update', async (anu) => {
 					if (!isGroup) return reply(ind.groupo())
 					if (!isGroupAdmins) return reply(ind.admin())
 					if (!isBotGroupAdmins) return reply(ind.badmin())
-					if (args.length < 1) return reply('Yang mau di add jin ya?')
-					if (args[0].startsWith('08')) return reply('Gunakan kode negara mas')
+					if (args.length < 1) return reply('What do you want to add a genie to??')
+					if (args[0].startsWith('08')) return reply('Use koGunakande mas')
 					try {
 						num = `${args[0].replace(/ /g, '')}@s.whatsapp.net`
 						client.groupAdd(from, [num])
