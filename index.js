@@ -833,7 +833,7 @@ client.on('group-participants-update', async (anu) => {
                       addLevelingXp(sender, mining)
                       await reply(`*congrats* ${pushname} you get *${mining}Xp*`)
                       }
-                    await limitAdd(sender)get
+                    await limitAdd(sender)
 					break
 				case 'bisakah':
 				if (!isRegistered) return reply(ind.noregis())
