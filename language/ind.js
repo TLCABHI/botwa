@@ -79,7 +79,7 @@ exports.pc = () => {
 }
 
 exports.registered = (username, age, serialUser, time, sender) => {
-	return`*「 DATA 」*\n\register success enjoy mwonu \n\n┏━⊱name\n┗⊱${username}\n┏━⊱number\n┗⊱wa.me/${sender.split("@")[0]}\n┏━⊱age\n┗⊱${age}\n┏━⊱register time\n┗⊱${time}\n\n┏━❉ *NS* ❉━\n┣⊱${serialUser}\n┗⊱NOTE : MADE BY PUPY AND ABHI:v`
+	return`*「 DATA 」*\n\ success enjoy mwonu \n\n┏━⊱name\n┗⊱${username}\n┏━⊱number\n┗⊱wa.me/${sender.split("@")[0]}\n┏━⊱age\n┗⊱${age}\n┏━⊱register time\n┗⊱${time}\n\n┏━❉ *NS* ❉━\n┣⊱${serialUser}\n┗⊱NOTE : MADE BY PUPY AND ABHI :v`
 }
 
 exports.cmdnf = (prefix, command) => {
