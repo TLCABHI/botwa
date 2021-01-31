@@ -59,7 +59,7 @@ exports.badmin = () => {
 }
 
 exports.nsfwoff = () => {
-	return`*NSFW GAK AKTIF*`
+	return`*NSFW IN ACTIVE*`
 }
 
 exports.bug = () => {
@@ -215,7 +215,7 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ╠☞ *${prefix}clone*
 ╠☞ *${prefix}setppbot*
 ║
-╠══─⊱ ❰ *THANGKS TO* ❱ ⊰─══➤
+╠══─⊱ ❰ *THANKS TO* ❱ ⊰─══➤
 ║
 ╠☞ *PUPY SER*
 ╠☞ *KARIMKOTTA*
