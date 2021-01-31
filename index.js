@@ -802,11 +802,11 @@ client.on('group-participants-update', async (anu) => {
 					teks += `\n\`\`\`Total grup : ${groupId.length}\`\`\``
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek})
 					break
-				case 'daftar':
+				case 'register':
                 if (isRegistered) return  reply(ind.rediregis())
-                if (!q.includes('|')) return  reply(ind.wrongf())
-                const namaUser = q.substring(0, q.indexOf('|') - 0)
-                const umurUser = q.substring(q.lastIndexOf('|') + 1)
+                if (!q.includes('/')) return  reply(ind.wrongf())
+                const namaUser = q.substring(0, q.indexOf('/') - 0)
+                const umurUser = q.substring(q.lastIndexOf('/') + 1)
                 const serialUser = createSerial(20)
                 veri = sender
                 if (isGroup) {
