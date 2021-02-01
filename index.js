@@ -52,7 +52,7 @@ limitawal = '2000000'
 cr = '*PUPY ABHI*'
 
 /******** OWNER NUMBER**********/
-const ownerNumber = ["919074329903@s.whatsapp.net","918304825484@s.whatsapp.net"] //ganti nomor lu
+const ownerNumber = ["919074329903@s.whatsapp.net","919497534004@s.whatsapp.net"] //ganti nomor lu
 /************************************/
 
        
