@@ -195,7 +195,7 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
 ╠☞ *${prefix}demote*
 ╠☞ *${prefix}promote*
 ╠☞ *${prefix}listadmin*
-╠☞ *${prefix}group* [buka/tutup]
+╠☞ *${prefix}group* [open/close]
 ╠☞ *${prefix}leveling* [enable/disable]
 ╠☞ *${prefix}nsfw* [1/0]
 ╠☞ *${prefix}simih* [1/0]
