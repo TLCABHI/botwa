@@ -116,7 +116,7 @@ exports.reglevelahf = (command, pushname, getLevelingLevel, sender, ahf) => {
 
 exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp, _registered, uangku) => { 
 	return `
-╭══─⊱ ❰ *LUNA MWOL* ❱ ⊰─══
+╭══─⊱ ❰ *DINKAN* ❱ ⊰─══
 ╠☞ *Name* : ${pushname}
 ╠☞ *NUMBER* : wa.me/${sender.split("@")[0]}
 ╠☞ *SUNAPPI* : Rp${uangku}
