@@ -285,7 +285,7 @@ client.on('group-participants-update', async (anu) => {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Hello @${num.split('@')[0]}\                      [ NEW MEMBER IN GROUP ]       *${mdata.subject}* []                             *_____________*                            WELCOME TO CLUB
+				teks = `Hello @${num.split('@')[0]}\                     . .[ NEW MEMBER IN GROUP ]       *${mdata.subject}* []                             *_____________*                           ..WELCOME TO CLUB
 
  *_____________*
 
@@ -1286,11 +1286,11 @@ client.on('group-participants-update', async (anu) => {
 					if (!isGroup) return reply(ind.groupo())
 					if (!isGroupAdmins) return reply(ind.admin())
 					if (!isBotGroupAdmins) return reply(ind.badmin())
-					if (args[0] === 'buka') {
+					if (args[0] === 'open') {
 					    reply(`*SUCCESSFUL OPENING THE GROUP*`)
 						client.groupSettingChange(from, GroupSettingChange.messageSend, false)
-					} else if (args[0] === 'tutup') {
-						reply(`*open group success`)
+					} else if (args[0] === 'close') {
+						reply(`*CLOSED GROUP SECCESS`)
 						client.groupSettingChange(from, GroupSettingChange.messageSend, true)
 					}
 					break      
